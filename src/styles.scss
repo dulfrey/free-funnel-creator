@@ -1,0 +1,108 @@
+/* You can add global styles to this file, and also import other style files */
+$pink:    #d63384;
+$primary:    $pink;
+body{
+    
+}
+footer{
+    padding:  1rem;
+    position:fixed;
+    width: -webkit-fill-available;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    bottom: 0px;
+    color: white;
+}
+
+@media (min-width: 700px) {
+    
+    .main-banner{
+        padding: 0 5rem 0 5rem;
+        background-color: #213b52;
+        display: grid;
+        grid-gap: 0.5rem;
+        align-content: center;
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+            "text image";
+            .text{
+                grid-area: text;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                h1{
+                    color:#fff;
+                    margin: 0 0 15px 0;
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 56px;
+                }
+                p{
+                    color:#d2e0ed;
+                    margin-bottom: 30px;
+                    font-size: 22px;
+                }
+            }
+            .image{
+                grid-area: image;
+                padding: 15px;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 100%;
+                img{
+                    width:100%;
+                }
+            }
+    }
+    
+  }
+@media (max-width: 700px) {
+    
+    .main-banner{
+        background-color: #213b52;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-gap: 0.5rem;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: 
+            "image"
+            "text";
+            .text{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                h1{
+                    color:#fff;
+                    margin: 0 0 15px 0;
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 56px;
+                }
+                p{
+                    color:#d2e0ed;
+                    margin-bottom: 30px;
+                    font-size: 22px;
+                }
+            }
+            .image{
+                padding: 15px;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 80%;
+                img{
+                    width:100%;
+                }
+            }
+    }
+}
