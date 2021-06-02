@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CreatorComponent } from './modules/creator/creator.component';
+import { ViewerComponent } from './viewer/viewer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreatorComponent
+    CreatorComponent,
+    ViewerComponent
   ],
   imports: [
     BrowserModule,
